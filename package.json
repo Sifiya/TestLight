@@ -1,0 +1,22 @@
+{
+  "name": "testlight",
+  "version": "1.0.0",
+  "description": "test project for JustCoded",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sifiya/TestLight.git"
+  },
+  "author": "Hrynko Tetiana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sifiya/TestLight/issues"
+  },
+  "homepage": "https://github.com/Sifiya/TestLight#readme",
+  "devDependencies": {
+    "webpack": "^4.4.1"
+  }
+}
