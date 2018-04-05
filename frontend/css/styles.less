@@ -297,17 +297,31 @@ ul {
       }
     }
 
-    &_list {
+    @item-width: @review-width * 75 / 100;
+    &_container {
       width: @review-width;
       margin: 0 auto;
 
+      &_inner {
+        width: @item-width;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+    }
+    &_list {
+      height: 430px;
+      width: @item-width * 3 + 10;
+      padding: 0;
+      text-align: left;
+      transition: margin-left 300ms;
+
       &_item {
+        text-align: center;
         position: relative;
-        width: 75%;
-        margin: 0 auto 115px;
+        width: @item-width;
+        margin-bottom: 115px;
         display: inline-block;
         padding-top: 190px;
-
 
         &_review-text {
           font-family: @main-font-family, 'Arial', sans-serif;
