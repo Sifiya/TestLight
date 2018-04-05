@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:500,600,700" rel="stylesheet">
   <title>FAPOR</title>
   <script src="index.js" defer></script>
 </head>
@@ -11,8 +12,7 @@
     <div class="layout-positioner">
       <div class="page-header_logo">
         <a class="page-header_logo_link" href="#">
-          <img class="page-header_logo_img" src="img/logo.png" alt="Fapor">
-          <h1 class="page-header_logo_text">Fapor</h1>
+          <img class="page-header_logo_img" src="img/logo2.png" alt="Fapor">
         </a>
       </div>
       <nav class="page-header_menu">
@@ -152,7 +152,14 @@
           <section class="page-footer_info_subscribe">
             <h1>Subscribe to our newsletter</h1>
             <form class="page-footer_info_subscribe_form" action="index.html" method="post">
-              <input type="email" class="page-footer_info_subscribe_form_email" placeholder="Enter your email adress">
+              <input
+                type="email"
+                name="email"
+                class="page-footer_info_subscribe_form_email"
+                placeholder="Enter your email adress"
+                pattern="^\w+@\w+\.\w+$"
+                required
+              >
               <button type="submit" class="page-footer_info_subscribe_form_btn">Subscribe now</button>
             </form>
           </section>
