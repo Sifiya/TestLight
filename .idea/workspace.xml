@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d612130-7f93-4f89-91ec-0733c23f1f1e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/css/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/css/styles.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/styles.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +25,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="103" selection-end-column="65" />
+                <state relative-caret-position="340">
+                  <caret line="41" lean-forward="true" selection-end-line="173" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -48,8 +45,8 @@
           <file leaf-file-name="styles.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/frontend/css/styles.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="731">
-                  <caret line="48" selection-start-line="48" selection-end-line="48" />
+                <state relative-caret-position="816">
+                  <caret line="54" selection-start-line="54" selection-end-line="54" />
                 </state>
               </provider>
             </entry>
@@ -61,8 +58,8 @@
           <file leaf-file-name="styles.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/frontend/css/styles.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="250">
-                  <caret line="275" column="46" selection-start-line="275" selection-start-column="46" selection-end-line="275" selection-end-column="46" />
+                <state relative-caret-position="177">
+                  <caret line="105" column="65" selection-start-line="105" selection-start-column="65" selection-end-line="105" selection-end-column="65" />
                 </state>
               </provider>
             </entry>
@@ -186,12 +183,14 @@
       <updated>1522838593030</updated>
       <workItem from="1522838596717" duration="3749000" />
       <workItem from="1522845750129" duration="14090000" />
-      <workItem from="1522864508699" duration="9110000" />
+      <workItem from="1522864508699" duration="9355000" />
+      <workItem from="1522875784358" duration="108000" />
+      <workItem from="1522911586773" duration="4819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26949000" />
+    <option name="totallyTimeSpent" value="32121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -223,6 +222,52 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="103" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="103" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/css/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -299,15 +344,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="103" selection-end-column="65" />
+        <state relative-caret-position="340">
+          <caret line="41" lean-forward="true" selection-end-line="173" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/css/styles.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="275" column="46" selection-start-line="275" selection-start-column="46" selection-end-line="275" selection-end-column="46" />
+        <state relative-caret-position="177">
+          <caret line="105" column="65" selection-start-line="105" selection-start-column="65" selection-end-line="105" selection-end-column="65" />
         </state>
       </provider>
     </entry>

@@ -14,10 +14,16 @@
 @review-width: 1123px;
 
 //Fonts
-@standart-font-size: 24px;
-@menu-font-size: 14px;
+@headings-font-size: 24px;
+@smaller-headings-font-size: 16px;
+@text-font-size: 14px;
+@copyright-font-size: 12px;
 
 @header-font-family: 'Open Sans';
+
+//Links
+@icons-sprite: 'img/icons.png';
+@page-main-header-bg-img: 'img/page-main-header-bg_v2.jpg';
 
 body {
   font-family: 'Arial', sans-serif;
@@ -97,13 +103,21 @@ ul {
   &_header {
     margin: 0;
     min-height: 283px;
-    background-color: rgba(36, 40, 47, 96);
+    background: rgba(36, 40, 47, 96) url(@page-main-header-bg-img) no-repeat;
+    background-size: cover;
     padding-top: 90px;
     box-sizing: border-box;
 
     h1 {
       color: @white-color;
       font-size: 40px;
+    }
+
+    &_text {
+      color: @white-color;
+      line-height: 24px;
+      font-size: @text-font-size;
+      max-width: 811px;
     }
   }
   &_management {
@@ -112,8 +126,8 @@ ul {
 
     h1 {
       display: inline-block;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: @headings-font-size;
+      line-height: @headings-font-size;
       margin: 0 auto;
 
       &::after {
@@ -153,13 +167,13 @@ ul {
         &_name {
           color: @black-color;
           margin-top: 29px;
-          font-size: 16px;
+          font-size: @smaller-headings-font-size;
           line-height: 16px;
         }
 
         &_position {
           color: @golden-color;
-          font-size: 14px;
+          font-size: @text-font-size;
           margin: 8px 0 0;
         }
 
@@ -179,7 +193,7 @@ ul {
           &_link {
             content: "";
             display: block;
-            background: @lightgray-color url("img/icons.png") no-repeat;
+            background: @lightgray-color url(@icons-sprite) no-repeat;
             border-radius: 50%;
             width: 34px;
             height: 34px;
@@ -200,8 +214,8 @@ ul {
 
     &_button {
       text-transform: uppercase;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: @headings-font-size;
+      line-height: @headings-font-size;
       height: 48px;
       width: 162px;
       border: 1px solid @backgrey2-color;
@@ -219,7 +233,7 @@ ul {
 
     h1 {
       color: @darkgrey-color;
-      font-size: 24px;
+      font-size: @headings-font-size;
       line-height: 24px;
 
       &::after {
@@ -237,18 +251,18 @@ ul {
       content: "";
       display: block;
       cursor: pointer;
-      background: url("img/icons.png") no-repeat;
+      background: url(@icons-sprite) no-repeat;
       width: 10px;
-      height: 16px;
+      height: 17px;
 
       &.arrow-left {
         left: (@container-width - @review-width) / 2;
-        background-position: -112px -9px;
+        background-position: -110px -10px;
       }
 
       &.arrow-right {
         right: (@container-width - @review-width) / 2;
-        background-position: -124px -9px;
+        background-position: -124px -10px;
       }
     }
 
@@ -259,15 +273,15 @@ ul {
       &_item {
         position: relative;
         width: 75%;
-        margin: 0 auto;
+        margin: 0 auto 115px;
         display: inline-block;
         padding-top: 190px;
-        margin-bottom: 115px;
+
 
         &_review-text {
           color: @black-color;
-          font-size: 14px;
-          line-height: 24px;
+          font-size: @text-font-size;
+          line-height: @headings-font-size;
         }
 
         &_author-img {
@@ -284,7 +298,7 @@ ul {
           margin-bottom: 20px;
           display: block;
           text-transform: uppercase;
-          font-size: 16px;
+          font-size: @smaller-headings-font-size;
           line-height: 16px;
           font-style: normal;
           font-weight: bold;
@@ -292,7 +306,7 @@ ul {
         }
 
         &_author-profession {
-          font-size: 14px;
+          font-size: @text-font-size;
           line-height: 14px;
           display: block;
           font-style: normal;
@@ -311,12 +325,118 @@ ul {
 
   &_info {
     background-color: @backgrey2-color;
+    padding-top: 80px;
+    padding-bottom: 45px;
+    font-size: @text-font-size;
+    line-height: 24px;
+    vertical-align: top;
+
     h1 {
       color: @golden-color;
+      font-size: @text-font-size;
+      margin-bottom: 24px;
     }
+
+    section {
+      vertical-align: top;
+      display: inline-block;
+      max-width: 300px;
+      margin-right: 150px;
+      &:last-child {
+
+        margin-right: 0;
+      }
+
+      p {
+        margin-top: 0;
+      }
+    }
+
+    &_about {
+      margin-left: 135px;
+    }
+
+    &_contact {
+      &_adress {
+        margin-bottom: 24px;
+      }
+
+      &_other {
+        margin: 0;
+      }
+    }
+
+    &_subscribe {
+      &_form {
+        &_email {
+          width: 276px;
+          padding: 11px;
+          margin-bottom: 12px;
+          border: 1px solid @textgrey-color;
+          background: none;
+          color: @textgrey-color;
+        }
+        &_btn {
+          width: 300px;
+          border: none;
+          text-transform: uppercase;
+          color: @white-color;
+          background-color: @golden-color;
+          padding: 14px 0;
+          text-align: center;
+        }
+      }
+    }
+
   }
 
   &_final {
     background-color: @darkgrey-color;
+    padding: 27px 0;
+    position: relative;
+
+    &_copyright {
+      margin: 0 0 0 135px;
+      font-size: @copyright-font-size;
+    }
+
+    &_socials {
+      position: absolute;
+      top: 0px - (27 / 4);
+      right: 150px;
+      margin: 0;
+      padding: 0;
+
+      &-item {
+        display: inline-block;
+
+        a {
+          content: "";
+          display: block;
+          width: 32px;
+          height: 32px;
+          border: 1px solid @textgrey-color;
+          border-radius: 50%;
+          background: url(@icons-sprite) no-repeat;
+        }
+
+        &.soc-f a {
+          background-position: -2px -35px;
+        }
+        &.soc-t a {
+          background-position: -37px -35px;
+        }
+        &.soc-g a {
+          background-position: -72px -35px;
+        }
+        &.soc-d a {
+          background-position: -107px -35px;
+        }
+        &.active a {
+          background-color: @golden-color;
+          border-color: @golden-color;
+        }
+      }
+    }
   }
 }
